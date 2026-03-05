@@ -1,0 +1,92 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(241, 228, 228);
+    padding: 20px;
+}
+
+#gameHeader {
+    margin-bottom: 20px;
+}
+
+#gameHeader h2 {
+    margin: 10px 0;
+}
+
+#gameHeader p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#gameBoard {
+    margin: 20px auto;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color:rgba(169, 7, 7, 0.573);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #333;
+}
+
+.card.matched {
+    background-color: #4CAF50;
+    color: white;
+    cursor: default;
+}
+
+#winMessage {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    display: none;
+}
+#gameBoard{
+    width:400px; 
+    display:flex; 
+    flex-wrap:wrap;
+
+}
+#difficultySelect {
+    margin: 15px 0;
+}
+
+#difficultySelect label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.difficulty-btn {
+    background-color: #8ce5d9af;
+    border: 2px solid #333;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.difficulty-btn.active {
+    background-color: #333;
+    color: white;
+}

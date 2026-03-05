@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Matching Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="gameHeader">
+        <h2>Memory Matching Game</h2>
+        <div id="difficultySelect">
+            <label>Difficulty: </label>
+            <button class="difficulty-btn active" data-level="easy">Easy (4x2)</button>
+            <button class="difficulty-btn" data-level="medium">Medium (4x4)</button>
+            <button class="difficulty-btn" data-level="hard">Hard (6x4)</button>
+        </div>
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Time: <span id="timer">0</span> seconds</p>
+    </div>
+
+    <div id="gameBoard"></div>
+
+    <div id="winMessage">
+        <h2>You Win!</h2>
+    </div>
+
+    <audio id="matchSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+    <audio id="wrongSound" src="https://www.soundjay.com/misc/sounds/buzzer-or-wrong-answer-01.mp3"></audio>
+</body>
+</html>
